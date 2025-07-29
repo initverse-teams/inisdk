@@ -11,6 +11,7 @@ export const ACCOUNTS = [
 // Named accounts
 export const [ALICE, BOB] = ACCOUNTS
 
+// test
 // export const mockToken = {
 //   type: "token",
 //   chainId: foundry.id,
