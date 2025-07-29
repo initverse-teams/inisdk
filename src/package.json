@@ -1,6 +1,6 @@
 {
-  "name": "inishi",
-  "description": "iniswap",
+  "name": "inisdk",
+  "description": "iniSDK",
   "version": "1.0.0",
   "type": "module",
   "main": "./_cjs/index.js",
@@ -188,7 +188,7 @@
     }
   },
   "license": "MIT",
-  "homepage": "",
-  "repository": "sushi-labs/sushi",
+  "homepage": "https://github.com/initverse-teams/inisdk",
+  "repository": "https://github.com/initverse-teams/inisdk",
   "keywords": ["eth", "ethereum", "dapps", "wallet", "web3", "typescript"]
 }
