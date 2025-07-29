@@ -1,0 +1,80 @@
+# Swap API Documentation
+
+## Overview
+The Swap API provides functionality to generate swap call data necessary for executing a swap transaction.
+
+## Example
+
+```ts twoslash
+import { createPublicClient, createWalletClient, http, type Hex } from 'viem'
+import { privateKeyToAccount } from 'viem/accounts'
+import { mainnet } from 'viem/chains'
+import { type SwapResponse } from 'sushi/api'
+
+const publicClient = createPublicClient({
+  chain: mainnet,
+  transport: http(),
+})
+
+const chainId = 1
+
+const SWAP_API_URL = new URL('https://api.sushi.com/swap/v7/' + chainId)
+
+// TokenA & TokenB
+const inputCurrency = '0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE'
+const outputCurrency = '0x6B3595068778DD592e39A122f4f5a5cF09C90fE2'
+
+// Amount
+const amount = 1000000000000000
+
+// Max Slippage
+const maxSlippage = 0.005
+
+// Sender
+const sender = '0x' // replace with your own address
+
+// Api Key, get yours at https://sushi.com/portal
+// const apiKey = "sushi_abcdefghijklmnopqr"
+
+const { searchParams } = SWAP_API_URL
+searchParams.set('tokenIn', inputCurrency)
+searchParams.set('tokenOut', outputCurrency)
+searchParams.set('amount', amount.toString())
+searchParams.set('maxSlippage', maxSlippage.toString())
+searchParams.set('sender', sender)
+// searchParams.set('apiKey', apiKey)
+
+// Make call to API
+console.log(SWAP_API_URL.toString())
+const res = await fetch(SWAP_API_URL.toString())
+const data = await res.json() as SwapResponse
+console.log(data)
+
+// If the swap status is 'Success'
+if (data.status === 'Success') {
+  const { tx } = data
+  // Simulate a call to the blockchain for the swap
+  const callResult = await publicClient.call({
+    account: tx.from,
+    data: tx.data,
+    to: tx.to,
+    value: tx.value,
+  })
+  // Returns the simulated amount out
+  console.log('Output: ', callResult)
+
+  // Send a transaction
+  const PRIVATE_KEY = process.env.PRIVATE_KEY as Hex
+  const walletClient = createWalletClient({
+    chain: mainnet,
+    transport: http(),
+  })
+  const hash = await walletClient.sendTransaction({ 
+    account: privateKeyToAccount(PRIVATE_KEY),
+    data: tx.data,
+    to: tx.to,
+    value: tx.value,
+  })
+  console.log('Tx: ', hash)
+}
+```
