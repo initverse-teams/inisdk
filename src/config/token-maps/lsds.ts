@@ -130,6 +130,7 @@ export const LSDS = {
       name: 'Wrapped eETH',
     }),
   ],
+  [EvmChainId.GENESIS]: [],
   [EvmChainId.BTTC]: [],
   [EvmChainId.CELO]: [],
   [EvmChainId.ETHEREUM]: [

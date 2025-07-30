@@ -86,6 +86,9 @@ export const STABLES = {
     FRAX[EvmChainId.BSC],
     axlUSDC[EvmChainId.BSC],
   ],
+  [EvmChainId.GENESIS]: [
+    USDT[EvmChainId.GENESIS],
+  ],
   [EvmChainId.BTTC]: [
     USDC[EvmChainId.BTTC],
     USDT[EvmChainId.BTTC],
