@@ -78,7 +78,7 @@ export const EVM_DEFAULT_BASES = {
     USDC[EvmChainId.BSC],
     USDT[EvmChainId.BSC],
     DAI[EvmChainId.BSC],
-  ],  
+  ],
   [EvmChainId.GENESIS]: [
     Native.onChain(EvmChainId.GENESIS),
     WNATIVE[EvmChainId.GENESIS],
