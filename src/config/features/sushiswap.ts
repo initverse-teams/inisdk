@@ -1,17 +1,17 @@
 import type { EvmChainId } from '../../chain/evm/index.js'
 import {
   SUSHISWAP_V2_SUPPORTED_CHAIN_IDS,
-  SUSHISWAP_V3_SUPPORTED_CHAIN_IDS,
+  /*SUSHISWAP_V3_SUPPORTED_CHAIN_IDS,*/
 } from '../features/index.js'
 import type { SushiSwapV2ChainId } from './sushiswap-v2.js'
-import type { SushiSwapV3ChainId } from './sushiswap-v3.js'
+//import type { SushiSwapV3ChainId } from './sushiswap-v3.js'
 
 export const SUSHISWAP_SUPPORTED_CHAIN_IDS = Array.from(
   new Set([
     ...SUSHISWAP_V2_SUPPORTED_CHAIN_IDS,
-    ...SUSHISWAP_V3_SUPPORTED_CHAIN_IDS,
+    //...SUSHISWAP_V3_SUPPORTED_CHAIN_IDS,
   ]),
-) as Readonly<(SushiSwapV2ChainId | SushiSwapV3ChainId)[]>
+) as Readonly<(SushiSwapV2ChainId)[]>
 
 export const SushiSwapChainIds = SUSHISWAP_SUPPORTED_CHAIN_IDS
 

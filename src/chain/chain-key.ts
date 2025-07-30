@@ -1,11 +1,10 @@
 import { EvmChainKey } from './evm/index.js'
 import type { ChainId } from './id.js'
-import { AptosChainKey, TronChainKey } from './non-evm/index.js'
+// import { AptosChainKey, TronChainKey } from './non-evm/index.js'
 
 export const ChainKey = {
   ...EvmChainKey,
-  ...AptosChainKey,
-  ...TronChainKey,
+  
 } as const satisfies Record<ChainId, string>
 export type ChainKey = (typeof ChainKey)[keyof typeof ChainKey]
 
