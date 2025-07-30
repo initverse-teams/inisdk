@@ -43,7 +43,6 @@ export const SUSHISWAP_V2_SUPPORTED_CHAIN_IDS = [
   EvmChainId.SONIC,
   EvmChainId.HEMI,
   EvmChainId.KATANA,
-  EvmChainId.GENESIS,
   // Eth testnets
   // EvmChainId.ROPSTEN,
   // EvmChainId.RINKEBY,
@@ -197,7 +196,6 @@ export const SUSHISWAP_V2_INIT_CODE_HASH: Record<
     '0xe18a34eb0e04b04f7a0ac29a6e80748dca96319b42c54d679cb821dca90c6303',
   [EvmChainId.KATANA]:
     '0xe18a34eb0e04b04f7a0ac29a6e80748dca96319b42c54d679cb821dca90c6303',
-  [EvmChainId.GENESIS]: '0x000',
 }
 
 export const SUSHISWAP_V2_FACTORY_ADDRESS: Record<
@@ -255,7 +253,6 @@ export const SUSHISWAP_V2_FACTORY_ADDRESS: Record<
   [EvmChainId.SEPOLIA]: '0x734583f62Bb6ACe3c9bA9bd5A53143CA2Ce8C55A',
   [EvmChainId.TATARA]: '0xB45e53277a7e0F1D35f2a77160e91e25507f1763',
   [EvmChainId.KATANA]: '0x72D111b4d6f31B38919ae39779f570b747d6Acd9',
-  [EvmChainId.GENESIS]: '0x000',
 }
 
 export const SUSHISWAP_V2_ROUTER_ADDRESS: Record<
@@ -315,5 +312,4 @@ export const SUSHISWAP_V2_ROUTER_ADDRESS: Record<
   [EvmChainId.SEPOLIA]: '0xeaBcE3E74EF41FB40024a21Cc2ee2F5dDc615791',
   [EvmChainId.TATARA]: '0x57bfFa72db682f7eb6C132DAE03FF36bBEB0c459',
   [EvmChainId.KATANA]: '0x69cC349932ae18ED406eeB917d79b9b3033fB68E',
-  [EvmChainId.GENESIS]: '0x000',
 }
