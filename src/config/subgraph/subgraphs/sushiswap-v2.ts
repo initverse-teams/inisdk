@@ -26,6 +26,7 @@ const SUSHISWAP_V2_DECENTRALIZED_DEPLOYMENT_IDS = {
   [EvmChainId.SCROLL]: `QmZkX4zi2RzLsQKva29gE3uCcMuJVxXE3R11Ln1J3FY3f7`,
   [EvmChainId.LINEA]: `QmWYpVMcyczvRvpzLpw5R7tKWouFLEzmufN55jnrNWmpth`,
   [EvmChainId.SONIC]: `QmTnVXE9wVJRDaxNdW1hnvzi8Cj1XBv3cMGXz6gHLacMVJ`,
+  [EvmChainId.GENESIS]: `QmQ3b4S6PSgvRkd5PhxtDPDQRybfmaRYxGVZCLbYJopoKJ`,
   // Deprecated chains
   // [EvmChainId.POLYGON_ZKEVM]: `QmQLtMYbTvxDHqc5oFH75N2b4DL3Czdv2jSCo6bk4UwKyf`,
   // [EvmChainId.FUSE]: `QmRcpZhksXHJjkAf7Kk9ngGQteWUNAEJ1VH3jttivdN2ft`,
