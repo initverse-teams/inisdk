@@ -11,7 +11,7 @@ export const SUSHISWAP_SUPPORTED_CHAIN_IDS = Array.from(
     ...SUSHISWAP_V2_SUPPORTED_CHAIN_IDS,
     //...SUSHISWAP_V3_SUPPORTED_CHAIN_IDS,
   ]),
-) as Readonly<(SushiSwapV2ChainId)[]>
+) as Readonly<SushiSwapV2ChainId[]>
 
 export const SushiSwapChainIds = SUSHISWAP_SUPPORTED_CHAIN_IDS
 

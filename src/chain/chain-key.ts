@@ -4,7 +4,6 @@ import type { ChainId } from './id.js'
 
 export const ChainKey = {
   ...EvmChainKey,
-  
 } as const satisfies Record<ChainId, string>
 export type ChainKey = (typeof ChainKey)[keyof typeof ChainKey]
 
