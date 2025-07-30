@@ -19,6 +19,7 @@ const SUPPORTED_CHAIN_IDS = [
   EvmChainId.MANTLE,
   EvmChainId.MANTA,
   EvmChainId.ZKLINK,
+  EvmChainId.GENESIS,
 ] as const
 
 export const TokenSecurityChainIds = SUPPORTED_CHAIN_IDS

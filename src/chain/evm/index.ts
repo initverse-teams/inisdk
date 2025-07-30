@@ -374,6 +374,7 @@ export const EvmChainKey = {
   [EvmChainId.TATARA]: 'tatara',
   [EvmChainId.KATANA]: 'katana',
   [EvmChainId.HYPEREVM]: 'hyperevm',
+  [EvmChainId.GENESIS]: 'genesis',
 } as const satisfies Record<EvmChainId, string>
 export type EvmChainKey = (typeof EvmChainKey)[keyof typeof EvmChainKey]
 

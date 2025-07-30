@@ -43,6 +43,7 @@ export const MULTISIG_CHAIN_IDS = [
   EvmChainId.FILECOIN,
   EvmChainId.KATANA,
   EvmChainId.HYPEREVM,
+  EvmChainId.GENESIS,
 ] as const
 
 export type MultisigChainId = (typeof MULTISIG_CHAIN_IDS)[number]
