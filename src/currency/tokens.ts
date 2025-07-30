@@ -534,6 +534,13 @@ export const WNATIVE = {
     symbol: 'WBNB',
     name: 'Wrapped BNB',
   }),
+  [EvmChainId.GENESIS]: new Token({
+    chainId: EvmChainId.GENESIS,
+    address: WNATIVE_ADDRESS[EvmChainId.GENESIS],
+    decimals: 18,
+    symbol: 'WINI',
+    name: 'Wrapped INI',
+  }),
   // [EvmChainId.BSC_TESTNET]: new Token({
   //   chainId: EvmChainId.BSC_TESTNET,
   //   address: WNATIVE_ADDRESS[EvmChainId.BSC_TESTNET],
