@@ -136,6 +136,14 @@ export class EvmChain implements EvmChainBase {
           standard: 'EIP3091',
         },
       ]
+    } else if (data.chainId === EvmChainId.GENESIS) {
+      this.explorers = [
+        {
+          name: 'initverse',
+          url: 'https://genesis-testnet.iniscan.com',
+          standard: 'EIP3091',
+        },
+      ]
     } else if (data.chainId === EvmChainId.BLAST) {
       this.explorers = [
         {
