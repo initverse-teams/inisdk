@@ -23,6 +23,7 @@ export const ROUTE_PROCESSOR_SUPPORTED_CHAIN_IDS = [
   EvmChainId.MOONRIVER,
   EvmChainId.OPTIMISM,
   EvmChainId.POLYGON,
+  EvmChainId.GENESIS,
 ] as const
 export type RouteProcessorChainId =
   (typeof ROUTE_PROCESSOR_SUPPORTED_CHAIN_IDS)[number]
@@ -50,6 +51,7 @@ export const ROUTE_PROCESSOR_ADDRESS: Record<
   [EvmChainId.MOONRIVER]: '0x9e4791ad13f14783C7B2A6A7bD8D6DDD1DC95847',
   [EvmChainId.OPTIMISM]: '0x96E04591579f298681361C6122Dc4Ef405c19385',
   [EvmChainId.POLYGON]: '0x0dc8E47a1196bcB590485eE8bF832c5c68A52f4B',
+  [EvmChainId.GENESIS]: '0xdD6Df93e34Efc00269E4b182a0aB77eddCE614d6',
 } as const
 export const isRouteProcessorChainId = (
   chainId: EvmChainId,
@@ -72,6 +74,7 @@ export const ROUTE_PROCESSOR_2_SUPPORTED_CHAIN_IDS = [
   EvmChainId.OPTIMISM,
   EvmChainId.POLYGON,
   EvmChainId.POLYGON_ZKEVM,
+  EvmChainId.GENESIS,
 ] as const
 export type RouteProcessor2ChainId =
   (typeof ROUTE_PROCESSOR_2_SUPPORTED_CHAIN_IDS)[number]
@@ -93,6 +96,7 @@ export const ROUTE_PROCESSOR_2_ADDRESS: Record<
   [EvmChainId.OPTIMISM]: '0xF0cBce1942A68BEB3d1b73F0dd86C8DCc363eF49',
   [EvmChainId.POLYGON]: '0x5097CBB61D3C75907656DC4e3bbA892Ff136649a',
   [EvmChainId.POLYGON_ZKEVM]: '0x93395129bd3fcf49d95730D3C2737c17990fF328',
+  [EvmChainId.GENESIS]: '0xdD6Df93e34Efc00269E4b182a0aB77eddCE614d6',
 } as const
 export const isRouteProcessor2ChainId = (
   chainId: EvmChainId,
