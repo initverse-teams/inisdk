@@ -34,3 +34,4 @@ export const getDecentralizedHostByDeploymentId = (key: string) =>
   `gateway-arbitrum.network.thegraph.com/api/${key}/deployments/id`
 
 export const SUSHI_DATA_API_HOST = 'https://production.data-gcp.sushi.com'
+export const INISWAP_DATA_API_HOST = 'http://192.168.31.5:8081'
