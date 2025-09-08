@@ -923,8 +923,8 @@ export const USDT: Record<keyof typeof USDT_ADDRESS, Token> = {
     chainId: EvmChainId.GENESIS,
     address: USDT_ADDRESS[EvmChainId.GENESIS],
     decimals: 18,
-    symbol: 'USDT',
-    name: 'Tether USD',
+    symbol: 'MYUSD',
+    name: 'MYUSD',
   }),
   // [EvmChainId.BSC_TESTNET]: new Token({
   //   chainId: EvmChainId.BSC_TESTNET,
