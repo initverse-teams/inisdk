@@ -99,7 +99,7 @@ export const RED_SNWAPPER_ADDRESS: Record<RedSnwapperChainId, Address> = {
   [EvmChainId.TATARA]: '0xAC4c6e212A361c968F1725b4d055b47E63F80b75',
   [EvmChainId.KATANA]: '0xAC4c6e212A361c968F1725b4d055b47E63F80b75',
   [EvmChainId.HYPEREVM]: '0xAC4c6e212A361c968F1725b4d055b47E63F80b75',
-  [EvmChainId.GENESIS]: '0x7479474b0b119AC30616812A66Bb4a5e5Eed6e9b',
+  [EvmChainId.GENESIS]: '0x175552b7a35651e7CceA754F098147d70b442bfa',
 } as const
 export const isRedSnwapperChainId = (
   chainId: EvmChainId,
