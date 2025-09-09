@@ -84,6 +84,11 @@ export const EVM_DEFAULT_BASES = {
     WNATIVE[EvmChainId.GENESIS],
     USDT[EvmChainId.GENESIS],
   ],
+  [EvmChainId.INITVERSE]: [
+    Native.onChain(EvmChainId.INITVERSE),
+    WNATIVE[EvmChainId.INITVERSE],
+    USDT[EvmChainId.INITVERSE],
+  ],
   // [EvmChainId.BSC_TESTNET]: [],
   [EvmChainId.POLYGON]: [
     Native.onChain(EvmChainId.POLYGON),

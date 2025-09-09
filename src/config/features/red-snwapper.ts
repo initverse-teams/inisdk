@@ -49,6 +49,7 @@ export const RED_SNWAPPER_SUPPORTED_CHAIN_IDS = [
   EvmChainId.KATANA,
   EvmChainId.HYPEREVM,
   EvmChainId.GENESIS,
+  EvmChainId.INITVERSE,
 ] as const
 export type RedSnwapperChainId =
   (typeof RED_SNWAPPER_SUPPORTED_CHAIN_IDS)[number]
@@ -100,6 +101,7 @@ export const RED_SNWAPPER_ADDRESS: Record<RedSnwapperChainId, Address> = {
   [EvmChainId.KATANA]: '0xAC4c6e212A361c968F1725b4d055b47E63F80b75',
   [EvmChainId.HYPEREVM]: '0xAC4c6e212A361c968F1725b4d055b47E63F80b75',
   [EvmChainId.GENESIS]: '0x25041a2BC34Cc612d03c2178558e9F06A84f0A8a',
+  [EvmChainId.INITVERSE]: '0xA856713c449AC29b063F9F5BD076C0c522ff95E8',
 } as const
 export const isRedSnwapperChainId = (
   chainId: EvmChainId,

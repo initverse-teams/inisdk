@@ -541,6 +541,13 @@ export const WNATIVE = {
     symbol: 'WINI',
     name: 'Wrapped INI',
   }),
+  [EvmChainId.INITVERSE]: new Token({
+    chainId: EvmChainId.INITVERSE,
+    address: WNATIVE_ADDRESS[EvmChainId.INITVERSE],
+    decimals: 18,
+    symbol: 'WINI',
+    name: 'Wrapped INI',
+  }),
   // [EvmChainId.BSC_TESTNET]: new Token({
   //   chainId: EvmChainId.BSC_TESTNET,
   //   address: WNATIVE_ADDRESS[EvmChainId.BSC_TESTNET],
@@ -922,6 +929,13 @@ export const USDT: Record<keyof typeof USDT_ADDRESS, Token> = {
   [EvmChainId.GENESIS]: new Token({
     chainId: EvmChainId.GENESIS,
     address: USDT_ADDRESS[EvmChainId.GENESIS],
+    decimals: 18,
+    symbol: 'MYUSD',
+    name: 'MYUSD',
+  }),
+  [EvmChainId.INITVERSE]: new Token({
+    chainId: EvmChainId.INITVERSE,
+    address: USDT_ADDRESS[EvmChainId.INITVERSE],
     decimals: 18,
     symbol: 'MYUSD',
     name: 'MYUSD',

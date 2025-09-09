@@ -144,7 +144,15 @@ export class EvmChain implements EvmChainBase {
           standard: 'EIP3091',
         },
       ]
-    } else if (data.chainId === EvmChainId.BLAST) {
+    }else if (data.chainId === EvmChainId.INITVERSE) {
+      this.explorers = [
+        {
+          name: 'initverse',
+          url: 'https://iniscan.com/',
+          standard: 'EIP3091',
+        },
+      ]
+    }  else if (data.chainId === EvmChainId.BLAST) {
       this.explorers = [
         {
           name: 'Blast Explorer',
@@ -383,6 +391,7 @@ export const EvmChainKey = {
   [EvmChainId.KATANA]: 'katana',
   [EvmChainId.HYPEREVM]: 'hyperevm',
   [EvmChainId.GENESIS]: 'genesis',
+  [EvmChainId.INITVERSE]: 'initverse',
 } as const satisfies Record<EvmChainId, string>
 export type EvmChainKey = (typeof EvmChainKey)[keyof typeof EvmChainKey]
 

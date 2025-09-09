@@ -101,6 +101,11 @@ const CHAIN_ID_SHORT_CURRENCY_NAME_TO_CURRENCY = {
     WETH: WNATIVE[EvmChainId.GENESIS],
     USDT: USDT[EvmChainId.GENESIS],
   },
+  [EvmChainId.INITVERSE]: {
+    ETH: Native.onChain(EvmChainId.INITVERSE),
+    WETH: WNATIVE[EvmChainId.INITVERSE],
+    USDT: USDT[EvmChainId.INITVERSE],
+  },
   [EvmChainId.BTTC]: {
     BTT: Native.onChain(EvmChainId.BTTC),
     WBTT: WNATIVE[EvmChainId.BTTC],

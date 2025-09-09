@@ -44,6 +44,7 @@ export const MULTISIG_CHAIN_IDS = [
   EvmChainId.KATANA,
   EvmChainId.HYPEREVM,
   EvmChainId.GENESIS,
+  EvmChainId.INITVERSE
 ] as const
 
 export type MultisigChainId = (typeof MULTISIG_CHAIN_IDS)[number]
@@ -57,6 +58,7 @@ export const MULTISIG_ADDRESS: Record<MultisigChainId, `0x${string}`> = {
   [EvmChainId.BOBA_BNB]: '0xb8f2faca5b2EBcd6Be7B5D9E164962dE9CCc3B76',
   [EvmChainId.BSC]: '0xc6fD91aD4919Fd91e2c84077ba648092cB499638',
   [EvmChainId.GENESIS]: '0xc6fD91aD4919Fd91e2c84077ba648092cB499638',
+  [EvmChainId.INITVERSE]: '0xc6fD91aD4919Fd91e2c84077ba648092cB499638',
   [EvmChainId.BTTC]: '0x488398D8EfeF84Bd3271f13ae8Eb44Cd2C1eE687',
   [EvmChainId.CELO]: '0x751b01Fa14fD9640a1DF9014e2D0f3a03A198b81',
   [EvmChainId.CRONOS]: '0xb8f2faca5b2EBcd6Be7B5D9E164962dE9CCc3B76',

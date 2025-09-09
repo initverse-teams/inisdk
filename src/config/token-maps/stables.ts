@@ -87,6 +87,7 @@ export const STABLES = {
     axlUSDC[EvmChainId.BSC],
   ],
   [EvmChainId.GENESIS]: [USDT[EvmChainId.GENESIS]],
+  [EvmChainId.INITVERSE]: [USDT[EvmChainId.INITVERSE]],
   [EvmChainId.BTTC]: [
     USDC[EvmChainId.BTTC],
     USDT[EvmChainId.BTTC],

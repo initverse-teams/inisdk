@@ -131,6 +131,7 @@ export const LSDS = {
     }),
   ],
   [EvmChainId.GENESIS]: [],
+  [EvmChainId.INITVERSE]: [],
   [EvmChainId.BTTC]: [],
   [EvmChainId.CELO]: [],
   [EvmChainId.ETHEREUM]: [
