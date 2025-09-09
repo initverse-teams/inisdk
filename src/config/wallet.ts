@@ -44,7 +44,7 @@ export const MULTISIG_CHAIN_IDS = [
   EvmChainId.KATANA,
   EvmChainId.HYPEREVM,
   EvmChainId.GENESIS,
-  EvmChainId.INITVERSE
+  EvmChainId.INITVERSE,
 ] as const
 
 export type MultisigChainId = (typeof MULTISIG_CHAIN_IDS)[number]

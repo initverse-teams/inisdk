@@ -144,7 +144,7 @@ export class EvmChain implements EvmChainBase {
           standard: 'EIP3091',
         },
       ]
-    }else if (data.chainId === EvmChainId.INITVERSE) {
+    } else if (data.chainId === EvmChainId.INITVERSE) {
       this.explorers = [
         {
           name: 'initverse',
@@ -152,7 +152,7 @@ export class EvmChain implements EvmChainBase {
           standard: 'EIP3091',
         },
       ]
-    }  else if (data.chainId === EvmChainId.BLAST) {
+    } else if (data.chainId === EvmChainId.BLAST) {
       this.explorers = [
         {
           name: 'Blast Explorer',
