@@ -39,6 +39,8 @@ export const DRPC_CHAIN_IDS = [
   EvmChainId.THUNDERCORE,
   EvmChainId.ZETACHAIN,
   EvmChainId.ZKSYNC_ERA,
+  EvmChainId.GENESIS,
+  EvmChainId.INITVERSE,
 ] as const
 
 export type DrpcChainId = (typeof DRPC_CHAIN_IDS)[number]
@@ -85,6 +87,8 @@ const drpcNetworkMapping = {
   [EvmChainId.THUNDERCORE]: 'thundercore',
   [EvmChainId.ZETACHAIN]: 'zeta-chain',
   [EvmChainId.ZKSYNC_ERA]: 'zksync',
+  [EvmChainId.GENESIS]: 'genesis',
+  [EvmChainId.INITVERSE]: 'initverse',
 } as const satisfies Record<DrpcChainId, string>
 
 export const getDrpcRpcUrl = ({
