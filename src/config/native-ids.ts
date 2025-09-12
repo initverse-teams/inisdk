@@ -64,4 +64,6 @@ export const nativeCurrencyIds = {
   [EvmChainId.TATARA]: 'ETH',
   [EvmChainId.KATANA]: 'ETH',
   [EvmChainId.HYPEREVM]: 'HYPE',
+  [EvmChainId.GENESIS]: 'INI',
+  [EvmChainId.INITVERSE]: 'INI',
 } as const
